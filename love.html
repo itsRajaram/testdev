@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Famous Love Story Movies</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #c0392b;
+    }
+    .movie-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .movie-card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .movie-card:hover {
+      transform: scale(1.03);
+    }
+    .movie-card img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+    }
+    .movie-info {
+      padding: 15px;
+    }
+    .movie-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #2c3e50;
+      margin: 0 0 5px 0;
+    }
+    .movie-year {
+      color: #888;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .movie-desc {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Famous Love Story Movies</h1>
+
+  <div class="movie-grid">
+    <div class="movie-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/8/8e/The_Notebook_poster.jpg" alt="The Notebook">
+      <div class="movie-info">
+        <div class="movie-title">The Notebook</div>
+        <div class="movie-year">2004</div>
+        <div class="movie-desc">A heartfelt romance between two young lovers, tested by time and circumstance.</div>
+      </div>
+    </div>
+
+    <div class="movie-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Titanic_poster.jpg" alt="Titanic">
+      <div class="movie-info">
+        <div class="movie-title">Titanic</div>
+        <div class="movie-year">1997</div>
+        <div class="movie-desc">A timeless love story set against the backdrop of the tragic Titanic disaster.</div>
+      </div>
+    </div>
+
+    <div class="movie-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/d/d3/Dilwale_Dulhania_Le_Jayenge_poster.jpg" alt="DDLJ">
+      <div class="movie-info">
+        <div class="movie-title">Dilwale Dulhania Le Jayenge</div>
+        <div class="movie-year">1995</div>
+        <div class="movie-desc">Raj and Simran fall in love during a trip to Europe — a Bollywood classic.</div>
+      </div>
+    </div>
+
+    <div class="movie-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/36/La_La_Land_%28film%29.png" alt="La La Land">
+      <div class="movie-info">
+        <div class="movie-title">La La Land</div>
+        <div class="movie-year">2016</div>
+        <div class="movie-desc">A jazz musician and aspiring actress fall in love while chasing their dreams in LA.</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
